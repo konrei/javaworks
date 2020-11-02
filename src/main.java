@@ -13,26 +13,24 @@ public class main {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
+
 		Car car = new Car();
-				
+
 		car.setName("honda");
 		car.setModel("sedan");
-		
+
 		Car car2 = new Car();
 		car2.setModel("hetchback");
 		car2.setName("toyota");
-		
-				
+
 		ArrayList<Car> cars = new ArrayList<>();
-		
+
 		cars.add(car);
 		cars.add(car2);
-		
-		for(int i = 0; i<cars.size(); i++) {
+
+		for (int i = 0; i < cars.size(); i++) {
 			System.out.println(cars.get(i).getName());
 		}
-		
 
 		while (true) {
 			System.out.print("(T)riangle, (S)quare, (C)ircle, (R)ectangle or (e)xit > ");
